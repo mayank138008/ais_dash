@@ -1,0 +1,92 @@
+[
+  {
+    "Region": "EJS",
+    "Station": "S2",
+    "Latitude": 1.4362059,
+    "Longitude": 103.8736295
+  },
+  {
+    "Region": "EJS",
+    "Station": "S3",
+    "Latitude": 1.42285,
+    "Longitude": 103.9079167
+  },
+  {
+    "Region": "EJS",
+    "Station": "S4B",
+    "Latitude": 1.409668,
+    "Longitude": 103.938004
+  },
+  {
+    "Region": "EJS",
+    "Station": "S6",
+    "Latitude": 1.386507,
+    "Longitude": 103.953789
+  },
+  {
+    "Region": "EJS",
+    "Station": "S7B",
+    "Latitude": 1.403407,
+    "Longitude": 103.98037
+  },
+  {
+    "Region": "WJS",
+    "Station": "SA1",
+    "Latitude": 1.44197,
+    "Longitude": 103.75681
+  },
+  {
+    "Region": "WJS",
+    "Station": "SA2",
+    "Latitude": 1.4437708,
+    "Longitude": 103.7398866
+  },
+  {
+    "Region": "WJS",
+    "Station": "SA3",
+    "Latitude": 1.4515421,
+    "Longitude": 103.7299061
+  },
+  {
+    "Region": "WJS",
+    "Station": "SA4",
+    "Latitude": 1.4492897,
+    "Longitude": 103.7087274
+  },
+  {
+    "Region": "WJS",
+    "Station": "SA5",
+    "Latitude": 1.438196,
+    "Longitude": 103.6955679
+  },
+  {
+    "Region": "SGS",
+    "Station": "SS1",
+    "Latitude": 1.2353609,
+    "Longitude": 103.831843
+  },
+  {
+    "Region": "SGS",
+    "Station": "SS2",
+    "Latitude": 1.2234814,
+    "Longitude": 103.8468569
+  },
+  {
+    "Region": "SGS",
+    "Station": "SS3",
+    "Latitude": 1.2191638,
+    "Longitude": 103.8338214
+  },
+  {
+    "Region": "SGS",
+    "Station": "SS4",
+    "Latitude": 1.227777,
+    "Longitude": 103.7516246
+  },
+  {
+    "Region": "SGS",
+    "Station": "SS5",
+    "Latitude": 1.1943676,
+    "Longitude": 103.7809693
+  }
+]
