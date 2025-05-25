@@ -3,6 +3,7 @@ import { Line } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend } from "chart.js";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
+
 export default function DynamicPorts({ filteredData, monthlyAverages, selectedField, getTimeSeriesForPort, setFullscreenChart }) {
   return filteredData.map((port, idx) => {
     const monthKey = `${port.port_id}_${port.date.slice(0,7)}`;

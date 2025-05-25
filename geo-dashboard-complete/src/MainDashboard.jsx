@@ -54,6 +54,8 @@ export default function MainDashboard() {
     setAvailableMMSIs(["636023646", "374056000", "636018313", "636022601"]);
   }, []);
 
+
+
   useEffect(() => {
     Papa.parse("/data/unified_port_data.csv", {
       header: true,
@@ -88,7 +90,7 @@ export default function MainDashboard() {
       }
     });
   }, []);
-
+// ==============================================================================================================
   useEffect(() => {
     if (!data.length) return;
     const averages = {};
@@ -105,7 +107,7 @@ export default function MainDashboard() {
     }
     setMonthlyAverages(finalAverages);
   }, [data, selectedField]);
-
+// ==============================================================================================================
   useEffect(() => {
     if (!selectedDate) {
       setFilteredData([]);
@@ -115,7 +117,7 @@ export default function MainDashboard() {
     const filtered = data.filter(row => row.date === selectedDateStr);
     setFilteredData(filtered);
   }, [data, selectedDate]);
-
+// ==============================================================================================================
   const getTimeSeriesForPort = (portId, field) => {
     return data
       .filter(row => row.port_id === portId)
@@ -125,6 +127,7 @@ export default function MainDashboard() {
 
   return (
     <div className="flex h-screen bg-[#1e293b] text-white relative">
+        {/* =========================================================================================================================================== */}
       <Sidebar
         {...{
           selectedDate,
@@ -141,7 +144,7 @@ export default function MainDashboard() {
           setSelectedMMSI,
         }}
       />
-
+        {/* =========================================================================================================================================== */}
       <div className="flex-1">
         <MapContainer center={[0, 0]} zoom={2} style={{ height: "100%", width: "100%" }}>
           <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="Tiles © Esri" />
@@ -149,7 +152,7 @@ export default function MainDashboard() {
           {showDynamic && <DynamicPorts {...{ filteredData, monthlyAverages, selectedField, getTimeSeriesForPort, setFullscreenChart }} />}
         </MapContainer>
       </div>
-
+    {/* =========================================================================================================================================== */}
       {selectedMMSI && (
         <div className="fixed inset-0 bg-black bg-opacity-80 z-[9999] flex items-center justify-center">
           <div className="relative bg-white w-11/12 h-5/6 rounded-lg shadow-lg overflow-hidden">
